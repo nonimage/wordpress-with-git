@@ -16,9 +16,13 @@ Edit wp-config.php - theme directory name and database settings
 ## Update Wordpress
 
 cd wordpress
+
 git fetch --tags
+
 git checkout [version eg. 3.3.2]
+
 cd ..
+
 git commit -m "Updated Wordpress to [version]"
 
 
