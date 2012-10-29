@@ -10,7 +10,7 @@ git commit -m "Added Wordpress subrepository"
 
 Add theme folder
 
-Edit wp-config.php - theme directory name and database settings
+Edit local-config.php (NOT wp-config.php) - theme directory name and database settings
 
 
 ## Update Wordpress
