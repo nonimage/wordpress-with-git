@@ -1,6 +1,27 @@
-You can use this as a start point for managing a WordPress install with git.
+## Set up
 
-In it's current state, all you need to do is clone this repo, then in `wp-config.php` update your database settings, and your default theme.
+git clone https://github.com/nonimage/wordpress-with-git.git [directory]
 
-See '[Install and manage WordPress with Git](http://davidwinter.me/articles/2012/04/09/install-and-manage-wordpress-with-git/)' for more details.
+cd [directory]
 
+git submodule add git://github.com/WordPress/WordPress.git wordpress
+
+git commit -m "Added Wordpress subrepository"
+
+Add theme folder
+
+Edit wp-config.php - theme directory name and database settings
+
+
+## Update Wordpress
+
+cd wordpress
+git fetch --tags
+git checkout [version eg. 3.3.2]
+cd ..
+git commit -m "Updated Wordpress to [version]"
+
+
+## Original
+
+'[Install and manage WordPress with Git](http://davidwinter.me/articles/2012/04/09/install-and-manage-wordpress-with-git/)' by David Winter.
