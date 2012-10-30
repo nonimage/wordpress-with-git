@@ -9,8 +9,18 @@
 	git commit -am "Initial commit"
 
 	git submodule add git://github.com/WordPress/WordPress.git Production/wordpress
+	
+	cd Production/wordpress
 
-	git commit -m "Added Wordpress subrepository"
+	git fetch --tags
+
+	git checkout [latest stable version eg. 3.3.2]
+
+	cd ../..
+	
+	git add -A
+
+	git commit -am "Added Wordpress, updated Wordpress to latest stable version"
 
 Add theme folder
 
