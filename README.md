@@ -1,29 +1,35 @@
 ## Set up
 
-git clone https://github.com/nonimage/wordpress-with-git.git [directory]
+	$ git clone https://github.com/nonimage/wordpress-with-git.git [directory]
 
-cd [directory]
+	$ cd [directory]
 
-git submodule add git://github.com/WordPress/WordPress.git wordpress
+	$ git rm --cached local-config.php
 
-git commit -m "Added Wordpress subrepository"
+	$ git commit -am "Initial commit"
+
+	$ git submodule add git://github.com/WordPress/WordPress.git wordpress
+
+	$ git commit -m "Added Wordpress subrepository"
 
 Add theme folder
 
 Edit local-config.php (NOT wp-config.php) - theme directory name and database settings
 
+	$ git commit -am "Added theme and database details"
+
 
 ## Update Wordpress
 
-cd wordpress
+	$ cd wordpress
 
-git fetch --tags
+	$ git fetch --tags
 
-git checkout [version eg. 3.3.2]
+	$ git checkout [version eg. 3.3.2]
 
-cd ..
+	$ cd ..
 
-git commit -m "Updated Wordpress to [version]"
+	$ git commit -m "Updated Wordpress to [version]"
 
 
 ## Original
