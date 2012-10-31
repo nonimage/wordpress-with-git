@@ -30,7 +30,9 @@ Edit Production/local-config.php (NOT Production/wp-config.php) - theme director
 
 	git commit -am "Added theme and database details"
 	
-Add any existing plugins and uploads
+Add any existing plugins
+
+Add any existing uploads (these are not version controlled as they are managed by the CMS and could make your repo huge)
 	
 	
 	
