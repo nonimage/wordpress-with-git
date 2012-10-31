@@ -24,13 +24,20 @@
 
 Add theme folder
 
+Add .htaccess file
+
 Edit Production/local-config.php (NOT Production/wp-config.php) - theme directory name and database settings
 
 	git commit -am "Added theme and database details"
 	
+Add any existing plugins and uploads
+	
+	
+	
 ## Change git remote
 
 	git remote set-url origin git://[url]
+
 
 
 ## Update Wordpress
@@ -46,6 +53,7 @@ Edit Production/local-config.php (NOT Production/wp-config.php) - theme director
 	git commit -m "Updated Wordpress to [version]"
 
 
+
 ## Original
 
-'[Install and manage WordPress with Git](http://davidwinter.me/articles/2012/04/09/install-and-manage-wordpress-with-git/)' by David Winter.
+This is a fork of '[Install and manage WordPress with Git](http://davidwinter.me/articles/2012/04/09/install-and-manage-wordpress-with-git/)' by David Winter.
