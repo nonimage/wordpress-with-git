@@ -6,8 +6,6 @@
 
 	git rm --cached Production/local-config.php
 	
-	git rm --cached Production/wp-content/uploads
-
 	git commit -am "Initial commit"
 
 	git submodule add git://github.com/WordPress/WordPress.git Production/wordpress
