@@ -36,7 +36,7 @@ Add any existing plugins and uploads
 	
 ## Change git remote
 
-	git remote set-url origin git://[url]
+	git remote set-url origin [git@example.etc]
 
 
 
