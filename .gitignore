@@ -11,3 +11,7 @@ Thumbs.db
 # Local config file #
 
 local-config.php
+
+# Ignore uploads #
+
+uploads/
