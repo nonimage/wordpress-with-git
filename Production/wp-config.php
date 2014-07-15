@@ -20,16 +20,16 @@ define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
 define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
 define('WP_DEFAULT_THEME', 'set_your_theme_here');
 
-if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {  
-    include( dirname( __FILE__ ) . '/local-config.php' );  
-    }  
+if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
+    include( dirname( __FILE__ ) . '/local-config.php' );
+    }
 
-else {  
-    define('DB_NAME', 'database_name_here');  
-    define('DB_USER', 'username_here');  
-    define('DB_PASSWORD', 'password_here');  
-    define('DB_HOST', 'localhost');  
-    }  
+else {
+    define('DB_NAME', 'database_name_here');
+    define('DB_USER', 'username_here');
+    define('DB_PASSWORD', 'password_here');
+    define('DB_HOST', 'localhost');
+    }
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
